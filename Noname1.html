@@ -23,7 +23,6 @@
   background-color: #E6E7E8;
 }
 
-  
 .accordion:after {
   content: '\002B';
   color: #777;
@@ -41,18 +40,14 @@
 .active:after {
   content: "\2212";
 }
-
-   img.none{
-                    display: none;
-                             }
-                .accordion.active img{
-                    display: none;
-                }
-                .accordion.active img.none{
-                    display: block;
-                }
-
-
+.go1 {
+  }
+  .go2{
+  opacity: 0;
+  }
+.change1. go1 {opacity: 0;}
+.change1. go2 {opacity: 100;} 
+  
 .panel {
   padding: 0 0px;
   background-color: #E6E7E8;
@@ -65,9 +60,13 @@
 <body>
 
 <img src="./image/expository diagram_221125_expand-11.png" style="width:100%">
-<button class="accordion">
-  <img src="./image/expository diagram_221125_expand-13-13.png" style="width:100%" class="none" > 
-  <img src="./image/expository diagram_221125_expand-13.png" style="width:100%" >
+<button class="accordion" onclick="myFunction(this)" >
+  <div class= go1>
+    <img src="./image/expository diagram_221125_expand-13-13.png" style="width:100%" > 
+  </div>
+    <div class= go2>
+  <img src="./image/expository diagram_221125_expand-13.png" style="width:100%">
+  </div>
 </button>
 <div class="panel">
   <p>  <img src="./image/expository diagram_221125_expand-12.png" style="width:100%"> </p>
@@ -114,6 +113,10 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     } 
   });
+}
+  
+  function myFunction(x) {
+  x.classList.toggle("change");
 }
 </script>
 
