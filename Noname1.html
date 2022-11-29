@@ -14,8 +14,9 @@
   outline: none;
   font-size: 35px;
   transition: 0.4s;
+  z-index: 1000; 
 
-}
+  }
 
 .active, .accordion:hover {
   background-color: #E6E7E8;
@@ -25,8 +26,10 @@
   content: '\002B';
   color: #777;
   font-weight: bold;
-  float: left;
+  float: 20%;
   margin-left: 20px;
+  z-index: -1000; 
+
 }
 
 .active:after {
@@ -50,17 +53,17 @@
   <p>  <img src="./image/expository diagram_221125_expand-12.png" style="width:100%"> </p>
 </div>
 
-<button class="accordion">Section 2</button>
+<button class="accordion"><img src="./image/expository diagram_221125_expand-16.png" style="width:100%"></button>
 <div class="panel">
   <p> </p>
 </div>
 
-<button class="accordion">Section 3</button>
+<button class="accordion"><img src="./image/expository diagram_221125_expand-15.png" style="width:100%"></button>
 <div class="panel">
   <p> </p>
 </div>
 
-<button class="accordion">Section 4</button>
+<button class="accordion"></button>
 <div class="panel">
   <p> </p>
 </div>
