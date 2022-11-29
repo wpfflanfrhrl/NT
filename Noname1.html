@@ -34,18 +34,23 @@
   display: none;
 
 }
+  
+    img.none{
+                    display: none;
+                }
+                .accordion.active img{
+                    display: none;
+                }
+                .accordion.active img.none{
+                    display: block;
+                }
+
 
   .accordion.active img{
     src: url("img src="./image/expository diagram_221125_expand-15.png");
     background: reds;
     z-index: 1000;
                 }
-
-  
-  
-  
-  
-  
   
 .active:after {
   content: "\2212";
