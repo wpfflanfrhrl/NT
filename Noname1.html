@@ -24,8 +24,6 @@
 }
 
   
-  
-            /*버튼 이미지 설정*/
 .accordion:after {
   content: '\002B';
   color: #777;
@@ -48,7 +46,14 @@
 
    img.none{
                     display: none;
+                             }
+                .accordion.active img{
+                    display: none;
                 }
+                .accordion.active img.none{
+                    display: block;
+                }
+
 
 .panel {
   padding: 0 0px;
@@ -63,13 +68,32 @@
 
 <img src="./image/expository diagram_221125_expand-11.png" style="width:100%">
 <button class="accordion">
-  <img src="./image/expository diagram_221125_expand-13.png" style="width:100%" > 
-  <img src="./image/expository diagram_221125_expand-13-13.png" style="width:100%" class="img.none">
+  <img src="./image/expository diagram_221125_expand-13-13.png" style="width:100%" class="none" > 
+  <img src="./image/expository diagram_221125_expand-13.png" style="width:100%" >
 </button>
 <div class="panel">
   <p>  <img src="./image/expository diagram_221125_expand-12.png" style="width:100%"> </p>
 </div>
 
+  <button class="accordion">
+  <img src="./image/expository diagram_221125_expand-13-13.png" style="width:100%" class="none" > 
+  <img src="./image/expository diagram_221125_expand-13.png" style="width:100%" >
+</button>
+<div class="panel">
+  <p>  <img src="./image/expository diagram_221125_expand-12.png" style="width:100%"> </p>
+</div>
+  
+  <button class="accordion">
+  <img src="./image/expository diagram_221125_expand-13-13.png" style="width:100%" class="none" > 
+  <img src="./image/expository diagram_221125_expand-13.png" style="width:100%" >
+</button>
+<div class="panel">
+  <p>  <img src="./image/expository diagram_221125_expand-12.png" style="width:100%"> </p>
+</div>
+  
+  
+  
+  
 <button class="accordion"><img src="./image/expository diagram_221125_expand-16.png" style="width:100%"></button>
 <div class="panel">
   <p> </p>
